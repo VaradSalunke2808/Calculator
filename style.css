@@ -11,45 +11,41 @@ body {
   box-sizing: border-box;
   background-color: #212121;
 }
-.buttons {
+.container {
   display: grid;
   justify-content: center;
   border-radius: 30px;
-  width: 25vw;
+  width: 24rem;
   align-items: center;
   background-color: #3e3e3e;
-  height: 87vh;
-  /* font-family: cursive; */
+  height: 40.5rem;
+  box-shadow: 10px 12px 25px;
 }
 .nums-ops {
-  margin-bottom: 50px;
-  /* background-color: #fff; */
-  /* background-color: aliceblue; */
+  margin-bottom: 30px;
 }
-.input {
-  border: none;
-  /* border-style: hidden; */
+#input {
+  cursor: default;
   outline: none;
-  /* font-family: sans-serif; */
-  font-size: 35px;
+
+  font-size: 38px;
   color: rgb(125, 194, 109);
   background-color: #2f2f12;
   text-align: right;
   margin: -10px 5px 5px 5px;
   width: 315px;
-  height: 48px;
+  height: 55px;
 }
 button {
   cursor: pointer;
   margin: 15px 5px 5px 5px;
-  box-shadow: 2px 13px 8px #1f1f1f;
+  box-shadow: 2px 13px 8px #050505;
   color: #fff;
   border-radius: 30px;
   background-color: #464545;
   border: none;
-  font-size: 28px;
-  /* margin: 5px; */
-  /* display: flex; */
+  font-size: 2rem;
+
   width: 70px;
   height: 70px;
   transition: 0.2s;
@@ -72,10 +68,13 @@ h1 {
 
 .all-clear {
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 .all-clear:hover {
   transform: scale(1.07);
+}
+.all-clear:active {
+  transform: scale(1);
 }
 .operators {
   transition: 0.3s;
@@ -89,12 +88,13 @@ h1 {
 .equal {
   background-color: #fe9d00;
   width: 155px;
-  transition: 0.2s;
+  transition: 0.4s;
 }
-
 .equal:hover {
   background-color: #fe9d00;
-
   cursor: pointer;
   transform: scale(1.07);
+}
+.equal:active {
+  transform: scale(1);
 }

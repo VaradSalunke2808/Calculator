@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -16,13 +15,13 @@
     <title>Calculator</title>
   </head>
   <body>
-    <div class="buttons">
+    <div class="container">
       <h1>CALCULATOR</h1>
       <div class="nums-ops">
-        <input type="" class="input" value="" /><br />
+        <input type="" id="input" value="" readonly /><br />
         <button class="all-clear" style="background-color: red">AC</button>
         <button class="operators">C</button>
-        <button class="operators"><i class="fa-solid fa-divide"></i></button>
+        <button class="operators">÷</button>
         <button class="operators">X</button><br />
         <button>7</button>
         <button>8</button>
@@ -35,11 +34,12 @@
         <button>1</button>
         <button>2</button>
         <button>3</button>
-        <button class="operators">%</button><br />
+        <button class="operators" style="font-size: 20px">Mod</button><br />
         <button>.</button>
         <button>0</button>
         <button class="equal">=</button>
       </div>
     </div>
   </body>
+  <script src="main.js"></script>
 </html>
